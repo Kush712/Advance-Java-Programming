@@ -16,6 +16,7 @@ public class Emoji extends Applet
         sleepy(g, 250, 150);
         angry(g, 350, 150);
         cry(g, 450, 150);
+        skull(g, 50, 250);
     }
 
     public void smiley(Graphics g, int x, int y) 
@@ -124,5 +125,17 @@ public class Emoji extends Applet
         g.drawArc(x + 20, y + 50, 40, 20, 0, 180);
         g.setColor(Color.BLUE);
         g.drawLine(x + 25, y + 40, x + 25, y + 60);
+    }
+
+    public void skull(Graphics g, int x, int y) 
+    {
+        g.setColor(Color.WHITE);
+        g.fillOval(x, y, 80, 80); // head
+        g.setColor(Color.BLACK);
+        g.fillOval(x + 20, y + 25, 10, 15); // left eye
+        g.fillOval(x + 50, y + 25, 10, 15); // right eye
+        g.drawLine(x + 40, y + 60, x + 40, y + 75); // vertical line for teeth
+        g.drawLine(x + 35, y + 65, x + 45, y + 65); // top horizontal line for teeth
+        g.drawLine(x + 35, y + 70, x + 45, y + 70); // bottom horizontal line for teeth
     }
 }
