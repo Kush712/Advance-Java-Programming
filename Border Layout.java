@@ -29,8 +29,6 @@ public class Ajp_pr10_B_QC1 extends Frame
         f.add(b3,BorderLayout.NORTH);
         f.add(b4,BorderLayout.SOUTH);
         
-        f.setVisible(true);
-        
+        f.setVisible(true); 
     }
-    
 }
